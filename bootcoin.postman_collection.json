@@ -177,7 +177,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8060/api/yanbootcoinki/customer",
+							"raw": "http://localhost:8060/api/bootcoin/customer",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -185,7 +185,7 @@
 							"port": "8060",
 							"path": [
 								"api",
-								"yanbootcoinki",
+								"bootcoin",
 								"customer"
 							]
 						}
@@ -229,7 +229,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8060/api/yabootcoinnki/customer/630f84741bf2d9019bb88eef",
+							"raw": "http://localhost:8060/api/bootcoin/customer/630f84741bf2d9019bb88eef",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -237,7 +237,7 @@
 							"port": "8060",
 							"path": [
 								"api",
-								"yabootcoinnki",
+								"bootcoin",
 								"customer",
 								"630f84741bf2d9019bb88eef"
 							]
