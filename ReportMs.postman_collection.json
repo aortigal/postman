@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "90e0cf70-027e-4264-97ad-663f554ac7e3",
+		"name": "ReportMs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/api/report/range?ini=10-08-2022&end=20-08-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"report",
+						"range"
+					],
+					"query": [
+						{
+							"key": "ini",
+							"value": "10-08-2022"
+						},
+						{
+							"key": "end",
+							"value": "20-08-2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "credit-card",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/api/report/movement/credit-card/62f02ac70c0a1c68eda36c32",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"report",
+						"movement",
+						"credit-card",
+						"62f02ac70c0a1c68eda36c32"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

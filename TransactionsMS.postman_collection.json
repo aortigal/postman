@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "35bc4596-fe88-4cc9-adc2-94b9a63fd835",
+		"name": "TransactionsMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/api/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/api/transaction/62f289a815d9f11d2a4b1b92",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"transaction",
+						"62f289a815d9f11d2a4b1b92"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activeId\" : \"62f179523e898a2cf9d6d51e\",\r\n    \"clientId\" : \"62edbc767ba3a05551fb10d6\",\r\n    \"creditId\" : \"62f179523e898a2cf9d6d51d\",\r\n    \"mont\" : 500.0,\r\n    \"seller\" : \"METRO\",\r\n    \"ruc\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/transaction/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"transaction",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"62f289a815d9f11d2a4b1b92\",\r\n    \"activeId\": \"62f179523e898a2cf9d6d51e\",\r\n    \"clientId\": \"62edbc767ba3a05551fb10d6\",\r\n    \"creditId\": \"62f179523e898a2cf9d6d51d\",\r\n    \"mont\": 600.0,\r\n    \"seller\": \"METRO\",\r\n    \"ruc\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/transaction/62f289a815d9f11d2a4b1b92",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"transaction",
+						"62f289a815d9f11d2a4b1b92"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/api/transaction/62f289a815d9f11d2a4b1b92",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"transaction",
+						"62f289a815d9f11d2a4b1b92"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

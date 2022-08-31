@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "00646454-de51-4848-98df-8f474be89f90",
+		"name": "config-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ms-payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://root:s3cr3t@localhost:8094/ms-payment/default",
+					"protocol": "http",
+					"auth": {
+						"user": "root",
+						"password": "s3cr3t"
+					},
+					"host": [
+						"localhost"
+					],
+					"port": "8094",
+					"path": [
+						"ms-payment",
+						"default"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

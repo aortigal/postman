@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "81a5d75b-424e-414c-b51d-e07d6a2f5714",
+		"name": "yanki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "payment",
+			"item": [
+				{
+					"name": "actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8071/actuator/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8071/api/yanki/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"api",
+								"yanki",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"recipientName\":\"Amado David Ortiz Gallardo\",\r\n    \"recipientPhone\":\"999984330\",\r\n    \"comissionAmount\":0,\r\n    \"amount\":1000,\r\n    \"customerPhone\":\"999984330\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8071/api/yanki/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"api",
+								"yanki",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transaction",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"senderName\":\"Amado David Ortiz Gallardo\",\r\n    \"senderPhone\":\"999984330\",\r\n    \"amount\":\"1000\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8073/api/yanki/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8073",
+							"path": [
+								"api",
+								"yanki",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8073/api/yanki/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8073",
+							"path": [
+								"api",
+								"yanki",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documentNumber\":\"76606398\",\r\n    \"phoneNumber\":\"999984330\",\r\n    \"name\":\"t\",\r\n    \"imei\":\"abc\",\r\n    \"email\":\"t@gmail.com\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8070/api/yanki/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8070",
+							"path": [
+								"api",
+								"yanki",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8070/api/yanki/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8070",
+							"path": [
+								"api",
+								"yanki",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findbyphoneNumber",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8070/api/yanki/customer/phone/999984338",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8070",
+							"path": [
+								"api",
+								"yanki",
+								"customer",
+								"phone",
+								"999984338"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8070/api/yanki/customer/630f84741bf2d9019bb88eef",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8070",
+							"path": [
+								"api",
+								"yanki",
+								"customer",
+								"630f84741bf2d9019bb88eef"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documentNumber\":\"76606397\",\r\n    \"phoneNumber\":\"999999999\",\r\n    \"name\":\"prueba\",\r\n    \"imei\":\"abcd\",\r\n    \"email\":\"d@gmail.com\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8070/api/yanki/customer/630f84741bf2d9019bb88eef",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8070",
+							"path": [
+								"api",
+								"yanki",
+								"customer",
+								"630f84741bf2d9019bb88eef"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

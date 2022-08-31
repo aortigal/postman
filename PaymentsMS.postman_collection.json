@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "4ef3fa2b-0b8a-4235-9489-be0486374cd7",
+		"name": "PaymentsMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/payment/62f2875000a7d4046f4db4d5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"payment",
+						"62f2875000a7d4046f4db4d5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/payment/62f2875000a7d4046f4db4d5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"payment",
+						"62f2875000a7d4046f4db4d5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activeId\" : \"62f179523e898a2\",\r\n    \"clientId\" : \"62edbc767ba3a05551fb10d6\",\r\n    \"creditId\" : \"62f179523e898a2cf9d6d51d\",\r\n    \"amount\" : \"200\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/payment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"payment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"62f28988c9bd312188ad997c\",\r\n    \"activeId\": \"62f179523e898a2\",\r\n    \"clientId\": \"62edbc767ba3a05551fb10d6\",\r\n    \"creditId\": \"62f179523e898a2cf9d6d51d\",\r\n    \"mont\": 40.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/payment/62f28988c9bd312188ad997c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"payment",
+						"62f28988c9bd312188ad997c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
